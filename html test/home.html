@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>login page</title>
+<link rel="stylesheet" type="text/css" href="st.css">
+<script>
+function call()
+{
+var a="admin";
+var b="admin";
+var x=document.getElementById("un").value;
+var y=document.getElementById("ps").value;
+if(a==x && b==y)
+{
+alert("LOGIN SUCCESSFUL");
+}
+else
+{
+alert("LOGIN FAILED");
+}
+}
+</script>
+</head>
+<body bgcolor="pink">
+
+<form>
+<center><h1 id="he"><i>LOGIN HERE!!</i></h1></center>
+<table id="tab" align="center" width="30%" height="10%">
+<tr>
+<th>
+USERNAME:
+</th>
+<td>
+<input type="text" id="un" name="uname" placeholder="enter your username">
+</td>
+</tr>
+<tr>
+<th>
+PASSWORD:
+</th>
+<td>
+<input type="password" id="ps" name="psswd" placeholder="password">
+</td>
+</tr>
+<a href="main.html"><input type="button" onclick="call()" id="s" value="SUBMIT"></a>
+</form>
+</table>
+<br><br><br><center><p>Already have a account? <a href="register.html">login</a></p></center>
+</body>
+</html>
